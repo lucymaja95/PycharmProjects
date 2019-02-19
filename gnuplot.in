@@ -1,0 +1,6 @@
+
+set term gif animate delay 2
+set output 'RK4_debug.gif'
+set xrange [0:1]
+set yrange [-0.1:0.1]
+do for[i=2:201]{plot 'RK4_debug.dat' u 1:i w lines}
